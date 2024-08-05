@@ -16,6 +16,17 @@ def rotate(arr):
     return result
 
 
+# 함수 다시
+# def rotate(arr):
+#     result = [[0] * N for _ in range(N)]
+#
+#     for i in range(N):
+#         for j in range(N):
+#             result[i][j] = arr[N-j-1][i]
+#
+#     return result
+
+
 
 T = int(input())
 
