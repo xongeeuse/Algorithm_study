@@ -1,6 +1,6 @@
 def recursion(s, l, r):
-    global cnt
-    cnt += 1
+    global cnt  # 재귀호출 횟수 저장할 전역 변수
+    cnt += 1    # 호출 될 때마다 + 1
 
     if l >= r: return 1
     elif s[l] != s[r]: return 0
@@ -15,4 +15,5 @@ for t in range(T):
     text = input()
     cnt = 0
 
+    # 팰린드롬 T / F, cnt
     print(isPalindrome(text), cnt)

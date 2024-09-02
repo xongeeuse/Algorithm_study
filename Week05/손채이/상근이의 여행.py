@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('input.txt')
-
 def bfs(start):
     global cnt
     visited = [0] * (N + 1)
@@ -24,6 +21,7 @@ for t in range(T):
     N, M = map(int, input().split())        # N 국가, M 비행기 종류
     graph = [[] for _ in range(N + 1)]
     cnt = 0
+
     for i in range(M):
         p, c = map(int, input().split())
         graph[p].append(c)
