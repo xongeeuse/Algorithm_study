@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(10**5)
+
 def my_dfs(node):
     for i in adjL[node]:
         if parent[i] == 0:
