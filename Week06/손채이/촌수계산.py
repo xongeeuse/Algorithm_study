@@ -32,5 +32,4 @@ for _ in range(e):
     graph[p].append(c)
     graph[c].append(p)
 
-cnt = 0
 print(bfs(n1, n2))
