@@ -1,5 +1,4 @@
 import sys
-sys.stdin = open('.txt')
 
 T = int(sys.stdin.readline().strip())
 
@@ -19,7 +18,6 @@ def recur(start, total, cnt):
 
     recur(start + 1, total, cnt)
     recur(start + 1, total + numbers[start], cnt + 1)
-
 
 
 for t in range(1, T + 1):
