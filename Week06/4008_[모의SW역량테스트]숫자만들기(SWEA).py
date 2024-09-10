@@ -47,7 +47,7 @@
 #     print(f'#{tc} {max_result - min_result}')
 
 
-# sol_2
+# sol_2 - 지웅이형
 def my_dfs(n):
     # 종료 조건
     global cal
@@ -59,7 +59,7 @@ def my_dfs(n):
     for i in range(4):
         if opers[i] == 0:  # 연산할 수 없는 경우 다음 연산자로 넘김
             continue
-        cal2 = cal
+        cal2 = cal # 초기값(계산전 값) 복사
         opers[i] -= 1
 
         if i == 0:

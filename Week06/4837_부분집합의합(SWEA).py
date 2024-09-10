@@ -32,7 +32,7 @@ for tc in range(1, T+1):
 #
 #     # 종료조건: n에 관련된 수식
 #     if n == size: # 모든 숫자에 대해 다 돌았는데
-#         if sm == K and cnt == N: # 합이 K이고
+#         if sm == K and cnt == N:
 #             ans += 1
 #         return
 #
