@@ -6,7 +6,7 @@
 |진행 요일|매주 화요일|
 |스터디 멤버| `김우영`, `도경원`, `손채이`, `송지영`
 |사용 언어|<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=PYTHON&logoColor=white"/>|
-|참고 사이트|🖥️[SWEA](https://swexpertacademy.com/)|
+|참고 사이트|🖥️[SWEA](https://swexpertacademy.com/), [BOJ](https://www.acmicpc.net/), [PGS](https://programmers.co.kr/)|
 
 </br>
 
