@@ -11,9 +11,9 @@ def my_bfs(start, end):
         current = queue.popleft()
 
         if current == end:
-            return visited[end]
-
-        for next in (current - 1, current + 1, current * 2):
+            return visited[current]
+        
+        for next in [current * 2, current - 1, current + 1]:
 
             if next < 0 or next >= 200001 or visited[next] != -1:
                 continue
@@ -21,11 +21,15 @@ def my_bfs(start, end):
             queue.append(next)
             visited[next] = visited[current] + 1
 
+
+
 N, K = map(int, input().split())
 visited = [-1] * 200001 # if 100000을 기준으로 탐색해야 한다고 했을 때 100000 * 2 까지 탐색하기 위해
 queue = deque()
 
+
 print(my_bfs(N, K))
+
 
 # 예제 입력 기준으로 4가 출력되는 방식
 # 0: 5
