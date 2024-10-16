@@ -1,4 +1,6 @@
 from collections import deque
+# import sys
+# sys.stdin = open("input.txt", "r")
 
 # 방향 벡터 (상, 하, 좌, 우)
 dx = [-1, 1, 0, 0]
@@ -42,10 +44,10 @@ for y in range(h):
         if not visited[y][x]:
             if battlefield[y][x] == 'W':  # 흰색 팀일 경우
                 soldier_count = bfs(x, y, 'W', visited, battlefield, w, h)
-                white_power += soldier_count ** 2  # 병사 수의 제곱만큼 전투력 추가
+                white_power += soldier_count * soldier_count  # 병사 수의 제곱만큼 전투력 추가
             elif battlefield[y][x] == 'B':  # 파란색 팀일 경우
                 soldier_count = bfs(x, y, 'B', visited, battlefield, w, h)
-                blue_power += soldier_count ** 2  # 병사 수의 제곱만큼 전투력 추가
+                blue_power += soldier_count * soldier_count  # 병사 수의 제곱만큼 전투력 추가
 
 # 결과 출력
 print(white_power, blue_power)
